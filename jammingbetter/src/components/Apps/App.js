@@ -3,6 +3,7 @@ import "./App.css";
 import SearchBar from "../SearchBar/SearchBar";
 import SearchResults from "../SearchResult/SearchResult";
 import { Playlist } from "../Playlist/Playlist";
+import { set } from "husky";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -34,6 +35,14 @@ class App extends React.Component {
         },
       ],
     };
+  }
+  addtrack(track) {
+    let tracks = this.state.playlistTracks;
+    if (tracks.find((saveTracks) => saveTracks.id === track.id)) {
+      return;
+    }
+    tracks.push(track)
+    this.setState({playlistTracks: tracks})
   }
   render() {
     return (
