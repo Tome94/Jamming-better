@@ -1,0 +1,12 @@
+Log created: 2022-11-23T21:55:04.553398000Z
+Process ID:  7729 (0x1e31)
+Parent PID:  1096 (0x448)
+Executable:  /usr/lib/virtualbox/VBoxHeadless
+Arg[0]: /usr/lib/virtualbox/VBoxHeadless
+Arg[1]: --comment
+Arg[2]: lighthouse_default_1644294218082_96202
+Arg[3]: --startvm
+Arg[4]: c6f5a1b6-12a7-426c-8744-e011d35997d6
+Arg[5]: --vrde
+Arg[6]: config
+AddRef: illegal refcnt=3221225469 state=2
